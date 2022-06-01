@@ -117,7 +117,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 // предварительно санитизовав.
   $user = 'u47749';
   $pass = '2224452';
-  $db = new PDO('mysql:host=localhost;dbname=u47646', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+  $db = new PDO('mysql:host=localhost;dbname=u47749', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
   $uid = $_SESSION['uid'];
   $res= $db->query("SELECT fio, email, year, pol, limb, biography FROM application2 WHERE id = $uid");
   foreach($res as $el){
